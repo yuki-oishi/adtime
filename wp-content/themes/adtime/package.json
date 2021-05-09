@@ -1,0 +1,37 @@
+{
+  "name": "carrozza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass ./assets/style.scss ./assets/style.css -w",
+    "server": "browser-sync start --server --config bs-config.js",
+    "postcss": "postcss ./assets/style.css --use autoprefixer -o ./assets/style.min.css -w",
+    "scss": "node-sass ./assets/style.scss ./assets/style.css --source-map-embed -w",
+    "styles": "npm run scss & npm run postcss",
+    "postcss:prod": "postcss ./assets/style.css --use autoprefixer -o ./assets/style.min.css --no-map",
+    "scss:prod": "node-sass ./assets/style.scss ./assets/style.css --output-style compressed",
+    "styles:prod": "npm run scss:prod & npm run postcss:prod",
+    "start": "npm run server & npm run styles"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "blueimp-file-upload": "^10.31.0",
+    "jquery": "^3.5.1",
+    "jquery.iframe-transport": "^1.0.0",
+    "jquery.ui.widget": "^1.10.3",
+    "lightbox2": "^2.11.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "browser-sync": "^2.26.12",
+    "node-sass": "^4.14.1",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.1.0",
+    "postcss-reporter": "^7.0.1"
+  }
+}

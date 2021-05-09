@@ -1,0 +1,265 @@
+<div class="steep-main-form">
+  <div class="steepform-inner">
+    <div class="form-section-hader greenbox">
+      <h2 class="fz24 fwb mb-0">お客様情報</h2>
+    </div>
+    <div class="steepform-inner-box">
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="your-name">区分<span class="c-red">※</span></label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input radioDiv">[radio kubun id:kubun use_label_element default:1 "個人" "個人事業主" "法人/団体"]
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="company-name">法人名/屋号名<span class="c-red">※</span></label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text* company-name id:company-name placeholder "例：株式会社 アドタイム"] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="your-name">お名前<span class="c-red">※</span></label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text* your-name id:your-name placeholder "例：田中 太郎"] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="phonetic">フリガナ</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text furi_name id:phonetic placeholder "例：タナカ タロウ"] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="phone-number">電話番号<span class="c-red">※</span></label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [tel* phone_number id:phone_number] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box border-0">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label h-100"><label class="h-100" for="email">メールアドレス<span
+                  class="c-red">※</span></label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [email* email_address id:email] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="your-zip">郵便番号</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text your-zip id:your-zip] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label hnine-100"><label for="your-address">ご住所</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text your-address id:your-address placeholder "市町村区・番地・マンション・建物名"] </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-section-hader greenbox innder-head">
+      <h2 class="fz24 fwb mb-0">【ポスティング】ご依頼内容</h2>
+    </div>
+    <div class="steepform-inner-box">
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="contact-type">お問い合わせ項目<br class="__pc">（複数選択可）</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [checkbox contact-type id:contact-type use_label_element free_text "ポスティングについて"
+              "チラシ制作・印刷について" "お見積り" "資料請求" "その他"] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="">ご依頼内容（概要）</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input radioDiv"> [radio purchase_type use_label_element exclusive free_text
+              id:over-the-counter default:1 "デザインから印刷・ポスティングまで全て依頼したい" "デザインはある（これから作成する）ので、印刷からポスティングまで依頼したい"
+              "チラシはあるのでポスティングのみ依頼したい" "その他"] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="hindo">実施頻度</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [select hindo id:hindo include_blank free_text "すぐにでも始めたい" "他社と相見積もり中" "実施検討中"
+              "その他"]
+              [group hindo-group]
+              [text hindo-other-text]
+              [/group]
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="convenient-date">希望エリア</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text convenient_date id:convenient-date placeholder "東京都中野区"] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="suryo">配布枚数</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text suryo id:suryo placeholder "例：10,000部程度"] </div>
+            <p class="mb-0">※最小ロット2,000部よりお受けしております。<br>※わからない場合は「不明」と入力ください。</p>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="suryo">広告物サイズ </label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [select size id:size include_blank "ハガキ" "B6" "B5" "B4" "B3" "A5" "A4" "A3" "その他"
+              "わからない"] [group size-group][text size-other-text][/group]</div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="suryo">お問い合わせ内容</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [textarea contact-detail id:contact-detail] </div>
+            <p class="mb-0">※詳細部数や希望エリア、その他ご要望がありましたらご記入頂けますと、より正確にお見積が可能です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-section-hader greenbox innder-head">
+      <h2 class="fz24 fwb mb-0">【WEB集客】ご依頼内容</h2>
+    </div>
+    <div class="steepform-inner-box">
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="web-contact-type">お問い合わせ内容<br class="__pc">（複数選択可）</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [checkbox web-contact-type id:web-contact-type use_label_element "HPの制作代行・リニューアルについて"
+              "SEO対策について" "リスティング代行について" "その他"] 
+              <p>詳細がございましたら以下にご入力ください。</p>
+              [textarea web-contact-detail id:web-contact-detail]
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="web-yosan">ご予算</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> [text web-yosan id:web-yosan] 
+              <p><span class="c-red">※ご予算に合うご提案を致します。</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="">ドメインに関して</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input radioDiv"> [radio web-domain use_label_element exclusive 
+              id:web-domain default:1 "新規取得希望(手続きは弊社で代行します)" "既に取得済み"
+              "ご自身で取得予定" "相談して決めたい"] </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-form-box">
+        <div class="row">
+          <div class="columns three">
+            <div class="form-input-label"><label for="web-homepage">ご希望のサービス<br class="__pc">（複数選択可）</label></div>
+          </div>
+          <div class="columns nine">
+            <div class="steep-input"> 
+              <div class="servicename">【ホームページ制作】</div>
+                [checkbox web-homepage id:web-homepage use_label_element "制作プラン" "集客専用プラン" "相談して決めたい"] 
+              <div class="servicename">【SEO対策】</div>
+                [checkbox web-seo id:web-seo use_label_element "じわじわプラン" "じっくりプラン" "大量集客プラン" "相談して決めたい"] 
+              <div class="servicename">【リスティング広告】</div>
+                [checkbox web-listing id:web-listing use_label_element "リスティング広告運用代行"] 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <h3 class="privacy-title">個人情報保護方針について</h3>
+  <div class="contentFormAfter">
+    <p> 株式会社アドタイム(以下｢当社｣)は、お客様の個人情報を適切に保護することを当社の重要な社会的責務として考え、個人情報の取扱いについて当社の方針を示すことといたします。</p>
+    <ol>
+      <li style="margin: 10px 0px 0px 18px; padding: 0px;"> 当社は、当社の事業の遂行において個人情報を取り扱う場合には、個人情報の保護に関する法令等を遵守します。</li>
+      <li style="margin: 10px 0px 0px 18px; padding: 0px;">
+        当社は、個人情報を不正な手段で取得しません。また、法令の定める場合を除き、個人情報の利用目的を通知または公表し、利用目的の範囲内において利用いたします。</li>
+      <li style="margin: 10px 0px 0px 18px; padding: 0px;">当社は、利用目的の達成に必要な範囲で、個人情報を正確かつ最新の内容に保つよう努めます。 </li>
+      <li style="margin: 10px 0px 0px 18px; padding: 0px;">
+        当社は、個人情報につき改ざん、破壊、紛失、漏洩等の事故の発生を防止するため、従業者の監督、委託先の監督、不正アクセス対策等の安全管理措置を講じます。</li>
+      <li style="margin: 10px 0px 0px 18px; padding: 0px;"> 本人の同意がある場合または法令に基づく場合以外は原則として取得した個人情報を第三者に開示・提供することはありません。
+      </li>
+      <li style="margin: 10px 0px 0px 18px; padding: 0px;"> 当社は、個人情報の保護を図るため、内部規則を制定し、役員、従業員に遵守させるとともに、教育、啓蒙を実施します。</li>
+    </ol>
+    <p> ＜個人情報の利用目的＞<br style="margin: 0px; padding: 0px;"> 当社は、個人情報を取り扱うに当たっては、次の利用目的の範囲で取り扱うものと致します。<br
+        style="margin: 0px; padding: 0px;"> ・当社への問い合わせに回答するため。<br style="margin: 0px; padding: 0px;"> ・当社のサービスをご連絡するため。
+    </p>
+    <p> 当社の個人情報の取扱いに関するお問合せにつきましては、下記へお問合せ下さい。当該ご請求がご本人によるものであることが確認できた後、合理的な期間内に、ご利用者の個人情報を開示、訂正または削除等を行います。<br
+        style="margin: 0px; padding: 0px;"><br style="margin: 0px; padding: 0px;"> 株式会社アドタイム 03-5342-3026</p>
+  </div>
+</div>
+<div class="ssl-security aggree-box">
+  <div class="agree-check tac"> [acceptance acceptance-112] 個人情報の取扱いに同意する [/acceptance] </div>
+</div>
+<div class="submit-button tac"> [submit class:contactBtn "送信"][confirm id:confirm_id class:contactBtn "入力内容の確認"][back id:back_id class:contactBtn "戻る"] </div>
